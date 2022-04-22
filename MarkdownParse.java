@@ -28,6 +28,10 @@ public class MarkdownParse {
                 toReturn.add(markdown.substring(openParen + 1, closeParen2));
                 currentIndex = closeParen2 + 1;
             }
+            else if (markdown.charAt(openBracket-1)== '!') 
+            {
+                currentIndex = closeParen + 1;
+            }
             else 
             {
                 toReturn.add(markdown.substring(openParen + 1, closeParen));
