@@ -22,7 +22,7 @@ public class MarkdownParse {
 
             //If statement checks if there is another open parentheses before
             //the end of the current line, and if so, go to the 2nd close
-            //parenthese 
+            //parentheses
             if (openParen2 != -1 && closeParen > openParen2)
             {
                 toReturn.add(markdown.substring(openParen + 1, closeParen2));
