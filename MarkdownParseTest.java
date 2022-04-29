@@ -38,6 +38,11 @@ public class MarkdownParseTest { //Creates a class to create tests
         assertEquals(2, 1 + 1); //Checks if the actual result (right) matches the expected result (left)
     }
 
+    @Test                       
+    public void multiplicationFail() {
+        assertEquals(8, 2 * 3); 
+    }
+
     @Test
     public void testGetLinks1() throws IOException {
         Path fileName = Paths.get("test-file.md");
