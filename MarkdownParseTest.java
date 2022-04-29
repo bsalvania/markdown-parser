@@ -40,7 +40,7 @@ public class MarkdownParseTest { //Creates a class to create tests
 
     @Test                       
     public void multiplicationFail() {
-        assertEquals(8, 2 * 5); 
+        assertEquals(8, 2 * 2); 
     }
 
     @Test
