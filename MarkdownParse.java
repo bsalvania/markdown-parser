@@ -24,7 +24,7 @@ public class MarkdownParse {
                 break;
             }
             int closeParen = markdown.indexOf(")", openParen);
-            if (markdown.charAt(openBracket-1)== '!') {
+            if (markdown.charAt(openBracket-1)== '!'|| (openParen-1 != closeBracket)) {
                 currentIndex = closeParen + 1;
             }
             else {
@@ -36,9 +36,6 @@ public class MarkdownParse {
             System.out.println("No links found");
         }
         return toReturn;
-        //Modify 
-        //Modify again
-        //Modify again again
     }
 
 
