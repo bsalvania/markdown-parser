@@ -164,7 +164,7 @@ public class MarkdownParseTest { //Creates a class to create tests
         snippet3ExpectedLinks.add("https://cse.ucsd.edu/");
 
 
-        Path fileName = Paths.get("snippet1.md");
+        Path fileName = Paths.get("snippet3.md");
         try {
             String content = Files.readString(fileName); 
             ArrayList<String> links = MarkdownParse.getLinks(content);
